@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Cities from './Components/City';
 import Home from './Components/Home';
