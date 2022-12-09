@@ -132,10 +132,6 @@ button {
   padding-top: 40px;
 }
 
-.cityContainer {
-  justify-content: center;
-}
-
 .countryDisplay {
   text-align: center;
   padding: 80px;
@@ -147,6 +143,7 @@ button {
 }
 
 .cityContainer {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   width: 50%;
@@ -202,12 +199,10 @@ button {
 
   .countryInfo {
     width: 100%;
-
   }
 
   .cityContainerMain {
     width: 100%;
-
   }
 }
 
@@ -219,7 +214,6 @@ button {
 
   .countryInfo {
     width: 100%;
-
   }
 
   .cityContainerMain {
@@ -228,7 +222,6 @@ button {
 
   .cityContainerMain:nth-child(even) {
     background-color: var(--light-pink);
-
   }
 
   /* pollutiondata page */
