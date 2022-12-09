@@ -40,6 +40,7 @@
 ## Live Demo
 
 - [Live Demo Link](https://air-pollution-2ff568.netlify.app/)
+- [Video Link](https://www.loom.com/share/b506f44d82d14783bb31c97de930f698)
 
 
 ## Getting Started
