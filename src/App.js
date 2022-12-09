@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Cities from './Components/City';
 import Home from './Components/Home';
 import Navbar from './Components/Navbar';
-import { Pollution }  from './Components/Pollution';
+import Pollution from './Components/Pollution';
 
 function App() {
   return (

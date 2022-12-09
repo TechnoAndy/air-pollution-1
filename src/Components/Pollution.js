@@ -10,7 +10,7 @@ const Time = (element) => {
   return `${date.toLocaleDateString()}\n${date.toLocaleTimeString()}`;
 };
 
-const Pollution = () => {
+export const Pollution = () => {
   const location = useLocation();
   const dispatch = useDispatch();
   const info = location.state;
@@ -61,4 +61,3 @@ const Pollution = () => {
   );
 };
 
-export default Pollution;
