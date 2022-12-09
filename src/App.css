@@ -18,3 +18,244 @@ html {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #fff;
 }
+
+body {
+  background-color: var(--pink);
+}
+/* navbar */
+.nav-link {
+  padding: 8px;
+  font-size: 20px;
+  display: flex;
+  float: right;
+}
+
+.link-1 {
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  float: right;
+}
+
+.countrySearchBox input {
+  padding: 8px 8px;
+  margin-left: 1em;
+  border: 2px solid var(--light-pink);
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--dark-pink);
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.countrySearchBox Button {
+  padding: 0.5rem;
+  background-color: var(--pink);
+  border: 2px solid var(--light-pink);
+  border-radius: 5px;
+  margin: 0.5em;
+  color: black;
+  cursor: pointer;
+}
+
+/* all buttons */
+button {
+  background-color: var(--pink);
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+}
+
+/* home page */
+.countryInfo {
+  display: inline-flex;
+  width: 20%;
+  height: 20rem;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--light-pink);
+  border: 2px solid var(--dark-pink);
+}
+
+.countryInfo:nth-child(2n + 2),
+.countryInfo:nth-child(0) {
+  background-color: var(--pink);
+  border: 1px solid var(--dark-pink);
+}
+
+.home-heading header {
+  padding: 2em;
+  display: inline-flex;
+  margin-left: 25em;
+  width: 100%;
+  height: 50%;
+}
+
+.home-heading h1 {
+  font-size: 33px;
+  padding-top: 200px;
+  text-align: center;
+  padding-left: 0.5rem;
+}
+
+.home-card-heading {
+  font-size: 35px;
+  padding: 30px;
+}
+
+.card-body {
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+/* city page */
+.cityContainerMain {
+  margin: 0;
+  border: 1px solid var(--pink);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 20%;
+}
+
+.cityContainerMain:nth-child(even) {
+  background-color: var(--light-pink);
+  border: 1px solid var(--dark-pink);
+}
+
+.city-heading {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  padding-top: 40px;
+}
+
+.cityContainer {
+  justify-content: center;
+}
+
+.countryDisplay {
+  text-align: center;
+  padding: 80px;
+}
+
+.card-title {
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+.cityContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+}
+
+.load-data-btn {
+  padding-bottom: 80px;
+}
+
+/* pollutiondata page */
+.tablePollution {
+  padding: 0.2rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.table-border {
+  border: 2px solid var(--light-pink);
+}
+
+.table-Heading th {
+  font-size: 30px;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.pollution-data {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.pollution-data:nth-child(odd) {
+  background-color: var(--light-pink);
+}
+
+.table-Heading th:nth-child(even) {
+  background-color: var(--light-pink);
+}
+
+@media only screen and (min-width: 700px) {
+  /* home page */
+  .home-heading header {
+    margin-left: -1em;
+    width: 100%;
+    height: 50%;
+  }
+
+  .countryInfo {
+    width: 100%;
+
+  }
+
+  .cityContainerMain {
+    width: 100%;
+
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  /* home page */
+  .home-heading header {
+    margin-left: -1em;
+  }
+
+  .countryInfo {
+    width: 100%;
+
+  }
+
+  .cityContainerMain {
+    width: 100%;
+  }
+
+  .cityContainerMain:nth-child(even) {
+    background-color: var(--light-pink);
+
+  }
+
+  /* pollutiondata page */
+  .tablePollution {
+    padding: 0.2rem;
+    padding-top: 4rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* home page */
+  .home-heading header {
+    margin-left: 25em;
+  }
+  .countryInfo {
+    width: 20%;
+  }
+
+  .cityContainerMain {
+    width: 20%;
+  }
+
+  /* pollutiondata page */
+  .tablePollution {
+    padding: 0.2rem;
+    padding-top: 4rem;
+    width: 100%;
+  }
+}
