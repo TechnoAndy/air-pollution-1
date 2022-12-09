@@ -50,6 +50,14 @@ body {
   font-size: 15px;
 }
 
+/* all buttons */
+button {
+  background-color: var(--pink);
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+}
+
 .countrySearchBox button {
   padding: 0.5rem;
   background-color: var(--pink);
@@ -58,14 +66,6 @@ body {
   margin: 0.5em;
   color: black;
   cursor: pointer;
-}
-
-/* all buttons */
-button {
-  background-color: var(--pink);
-  padding: 5px;
-  font-size: 15px;
-  border: none;
 }
 
 /* home page */
