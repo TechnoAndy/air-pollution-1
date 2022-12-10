@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { airpollution } from '../Redux/Reducers/Pollution';
-import "../App";
+import '../App';
 
 const Time = (element) => {
   const date = new Date(element.props * 1000);
