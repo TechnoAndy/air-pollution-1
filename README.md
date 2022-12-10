@@ -40,6 +40,7 @@
 ## Live Demo
 
 - [Live Demo Link](https://air-pollution-2ff568.netlify.app/)
+- [Video Link](https://www.loom.com/share/b506f44d82d14783bb31c97de930f698)
 
 
 ## Getting Started
@@ -104,6 +105,7 @@ Feel free to check the [issues page](../../issues/).
 - To the amazing coding partners I have come across from day 1. The most supportive team ever.
 - Google
 - YouTube
+- Nelson Sakwa the author of the original design.
 
 ## License
 
