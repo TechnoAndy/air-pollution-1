@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
-import { Button, Container } from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
-import { v4 as uuidv4 } from 'uuid';
-import { NavLink } from 'react-router-dom';
-import { fetchCountries, filteredCountries } from '../Redux/Reducers/Countries';
+import { useEffect } from "react";
+import { Button, Container } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
+import { v4 as uuidv4 } from "uuid";
+import { NavLink } from "react-router-dom";
+import { fetchCountries, filteredCountries } from "../Redux/Reducers/Countries";
 
 const Home = () => {
   let countryName;
@@ -43,11 +43,13 @@ const Home = () => {
           <div className="map-image">
             <img src="./africa.png" alt="Map Of Africa" />
           </div>
-          <h1>
-            Quality of air in
-            <br />
-            Africa.
-          </h1>
+          <div className="map-heading">
+            <h1>
+              Quality of air in
+              <br />
+              Africa.
+            </h1>
+          </div>
         </header>
       </div>
 
