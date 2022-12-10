@@ -255,3 +255,24 @@ button {
     width: 100%;
   }
 }
+
+@media only screen and (min-width: 300px) {
+  .home-heading header {
+    margin-left: 25em;
+  }
+
+  .countryInfo {
+    width: 50%;
+  }
+
+  .cityContainerMain {
+    width: 50%;
+  }
+
+  /* pollutiondata page */
+  .tablePollution {
+    padding: 0.2rem;
+    padding-top: 4rem;
+    width: 100%;
+  }
+}
