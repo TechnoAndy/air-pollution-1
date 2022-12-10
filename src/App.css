@@ -1,0 +1,469 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --pink: #f03f83;
+  --dark-pink: #ec4c8a;
+  --light-pink: #fc5193;
+  --T: #51fcda;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: var(--pink);
+}
+
+/* navbar */
+.nav-link {
+  padding: 8px;
+  font-size: 20px;
+  display: flex;
+  float: right;
+}
+
+.link-1 {
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  float: right;
+}
+
+.countrySearchBox input {
+  padding: 8px 8px;
+  margin-left: 1em;
+  border: 2px solid var(--light-pink);
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--dark-pink);
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* all buttons */
+button {
+  background-color: var(--pink);
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+}
+
+.countrySearchBox button {
+  padding: 0.5rem;
+  background-color: var(--pink);
+  border: 2px solid var(--light-pink);
+  border-radius: 5px;
+  margin: 0.5em;
+  color: black;
+  cursor: pointer;
+}
+
+/* home page */
+.countryInfo {
+  display: inline-flex;
+  width: 20%;
+  height: 20rem;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--light-pink);
+}
+
+.countryInfo:nth-child(2n + 2),
+.countryInfo:nth-child(0) {
+  background-color: var(--pink);
+  border: 1px solid var(--dark-pink);
+}
+
+.home-heading {
+  padding: 2em;
+  width: 100%;
+  height: 20%;
+}
+
+.home-heading header {
+  display: inline-flex;
+}
+
+.map-image {
+  width: 100%;
+  height: 20%;
+}
+
+.map-heading {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 8em;
+}
+
+.map-heading h1 {
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+.home-card-heading {
+  font-size: 35px;
+  padding: 30px;
+}
+
+.card-body {
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+/* city page */
+.cityContainerMain {
+  margin: 0;
+  border: 1px solid var(--pink);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 20%;
+}
+
+.cityContainerMain:nth-child(even) {
+  background-color: var(--light-pink);
+}
+
+.city-heading {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  padding-top: 40px;
+}
+
+.countryDisplay {
+  text-align: center;
+  padding: 80px;
+}
+
+.card-title {
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+.cityContainer {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+}
+
+/* .load-data-btn {
+  padding-bottom: 80px;
+} */
+
+/* pollutiondata page */
+.tablePollution {
+  padding: 0.2rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.table-border {
+  border: 2px solid var(--light-pink);
+}
+
+.table-Heading th {
+  font-size: 30px;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.pollution-data {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.pollution-data:nth-child(odd) {
+  background-color: var(--light-pink);
+}
+
+.table-Heading th:nth-child(even) {
+  background-color: var(--light-pink);
+}
+
+@media only screen and (min-width: 300px) {
+  /* navbar */
+  .countrySearchBox input {
+    padding: 2px 2px;
+    font-size: 9px;
+  }
+
+  .countrySearchBox button {
+    margin: 0.4em;
+    padding: 2px 2px;
+    font-size: 8px;
+  }
+
+  .nav-link {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  .link-1 {
+    padding: 14px;
+    font-size: 12px;
+  }
+
+  /* home page */
+  .map-image img {
+    width: 110%;
+    height: 20%;
+  }
+
+  .map-heading {
+    width: 100%;
+    height: 20%;
+    font-size: 10px;
+  }
+
+  .countryInfo {
+    width: 50%;
+    height: 12rem;
+  }
+
+  .countryInfo:nth-of-type(2n+1) {
+    background-color: var(--pink);
+  }
+
+  .home-card-heading {
+    font-size: 25px;
+    padding: 12px;
+  }
+
+  .card-body {
+    font-size: 18px;
+  }
+
+  .card-title {
+    font-size: 25px;
+  }
+
+  /* city page */
+  .cityContainerMain {
+    display: inline-block;
+    width: 100%;
+    height: 15%;
+  }
+
+  .cityContainer {
+    height: 8rem;
+    float: left;
+  }
+
+  .city-heading {
+    width: 140%;
+    height: 15%;
+    font-size: 28px;
+    padding-right: 1em;
+  }
+
+  .load-data-btn button {
+    margin-left: 5.8rem;
+    margin-top: 2.5em;
+  }
+
+  .countryDisplay {
+    height: 15%;
+  }
+
+  /* pollutiondata page */
+  .tablePollution {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .table-Heading th {
+    font-size: 12px;
+  }
+
+  .pollution-data {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  /* home page */
+  .home-heading header {
+    margin-left: -1em;
+  }
+
+  .countryInfo {
+    width: 50%;
+  }
+
+  .cityContainerMain {
+    width: 100%;
+  }
+
+  .cityContainerMain:nth-child(even) {
+    background-color: var(--light-pink);
+  }
+
+  /* pollutiondata page */
+  .tablePollution {
+    padding: 0.2rem;
+    padding-top: 4rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  /* home page */
+  .home-heading header {
+    margin-left: -1em;
+    width: 100%;
+    height: 50%;
+  }
+
+  .countryInfo {
+    width: 100%;
+  }
+
+  .cityContainerMain {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* navbar */
+  .nav-link {
+    padding: 8px;
+    font-size: 20px;
+    display: flex;
+    float: right;
+  }
+
+  .link-1 {
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    float: right;
+  }
+
+  .countrySearchBox input {
+    padding: 8px 8px;
+    margin-left: 1em;
+    border: 2px solid var(--light-pink);
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--dark-pink);
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  /* all buttons */
+  button {
+    background-color: var(--pink);
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+  }
+
+  .countrySearchBox button {
+    padding: 8px 8px;
+    font-size: 15px;
+  }
+
+  /* home page */
+  .home-heading {
+    padding: 2em;
+    width: 100%;
+    height: 20%;
+  }
+
+  .home-heading header {
+    display: inline-flex;
+  }
+
+  .map-image {
+    width: 70%;
+    height: 20%;
+  }
+
+  .map-heading {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 8em;
+  }
+
+  .map-heading h1 {
+    padding-top: 5em;
+    padding-left: 2em;
+  }
+
+  .home-card-heading {
+    font-size: 35px;
+    padding: 30px;
+  }
+
+  .countryInfo {
+    width: 20%;
+    height: 35vh;
+  }
+
+  /* city page */
+  .countryDisplay {
+    height: 15%;
+    font-size: 28px;
+  }
+
+  .card-title {
+    font-size: 35px;
+  }
+
+  .card-text {
+    font-size: 25px;
+  }
+
+  .cityContainerMain {
+    width: 20%;
+    height: 35vh;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .city-heading {
+    font-size: 34px;
+    padding-left: 4em;
+    text-align: center;
+  }
+
+  .load-data-btn {
+    padding-right: 5.5em;
+  }
+
+  /* pollutiondata page */
+  .tablePollution {
+    padding: 0.2rem;
+    padding-top: 4rem;
+    width: 100%;
+  }
+
+  .table-Heading th {
+    font-size: 25px;
+  }
+
+  .pollution-data {
+    font-size: 18px;
+  }
+}
