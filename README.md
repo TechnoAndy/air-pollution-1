@@ -105,6 +105,7 @@ Feel free to check the [issues page](../../issues/).
 - To the amazing coding partners I have come across from day 1. The most supportive team ever.
 - Google
 - YouTube
+- Nelson Sakwa the author of the original design.
 
 ## License
 
