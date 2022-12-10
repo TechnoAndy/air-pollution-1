@@ -19,7 +19,6 @@ const Cities = () => {
     <section>
       <div className="countryDisplayBlock">
         <div>
-        <img src={countryInfo.flag} className="card-img" alt="..." />
           <div className="countryDisplay">
             <h5 className="card-title">{countryInfo.name}</h5>
             <p className="card-text">

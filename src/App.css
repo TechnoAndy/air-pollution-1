@@ -315,7 +315,7 @@ button {
   }
 
   .card-title {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   /* city page */
@@ -349,5 +349,13 @@ button {
   /* pollutiondata page */
   .tablePollution {
     width: 100%;
+  }
+
+  .table-Heading th {
+    font-size: 20px;
+  }
+
+  .pollution-data {
+    font-size: 12px;
   }
 }
