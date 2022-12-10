@@ -236,14 +236,12 @@ button {
   }
 
   .countryInfo {
-    width: 50%;
+    width: 20%;
     height: 12rem;
   }
 
-  .countryInfo:nth-child(2n + 2),
-  .countryInfo:nth-child(0) {
-    background-color: var(--pink);
-    border: 1px solid var(--dark-pink);
+  .home-countries:nth-child(1n+2) {
+    background-color: var(--light-pink);
   }
 
   .home-card-heading {
@@ -421,12 +419,6 @@ button {
   .countryInfo {
     width: 20%;
     height: 35vh;
-  }
-
-  .countryInfo:nth-child(2n + 2),
-  .countryInfo:nth-child(0) {
-    background-color: var(--pink);
-    border: 1px solid var(--dark-pink);
   }
 
   /* city page */
