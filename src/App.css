@@ -240,6 +240,12 @@ button {
     height: 12rem;
   }
 
+  .countryInfo:nth-child(2n + 2),
+  .countryInfo:nth-child(0) {
+    background-color: var(--pink);
+    border: 1px solid var(--dark-pink);
+  }
+
   .home-card-heading {
     font-size: 25px;
     padding: 12px;
@@ -339,7 +345,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 685px) {
+@media only screen and (min-width: 900px) {
   /* navbar */
   .nav-link {
     padding: 8px;
@@ -417,6 +423,12 @@ button {
     height: 35vh;
   }
 
+  .countryInfo:nth-child(2n + 2),
+  .countryInfo:nth-child(0) {
+    background-color: var(--pink);
+    border: 1px solid var(--dark-pink);
+  }
+
   /* city page */
   .countryDisplay {
     height: 15%;
@@ -425,6 +437,10 @@ button {
 
   .card-title {
     font-size: 35px;
+  }
+
+  .card-text {
+    font-size: 25px;
   }
 
   .cityContainerMain {
@@ -436,10 +452,12 @@ button {
 
   .city-heading {
     font-size: 34px;
+    padding-left: 4em;
+    text-align: center;
   }
 
   .load-data-btn {
-    /* padding-left: 1em; */
+    padding-right: 5.5em;
   }
 
   /* pollutiondata page */
