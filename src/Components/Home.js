@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="countrySearchBox">
+      <div className="searchBoxOuter">
         <input
           className="countrySearch"
           type="text"
@@ -28,7 +28,6 @@ const Home = () => {
           }}
         />
         <Button
-          variant="secondary"
           type="button"
           onClick={async () => {
             await dispatch(fetchCountries());
@@ -56,7 +55,7 @@ const Home = () => {
       <Container className="home-countries">
         {countries.map((country) => (
           <div key={uuidv4()} className="countryInfo">
-            <div className="card-text">
+            <div className="card-t">
               <div className="home-card-heading">{country.name}</div>
               <div className="card-body">
                 {country.countrycode}

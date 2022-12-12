@@ -38,7 +38,7 @@ body {
   float: right;
 }
 
-.countrySearchBox input {
+.searchBoxOuter input {
   padding: 8px 8px;
   margin-left: 1em;
   border: 2px solid var(--light-pink);
@@ -58,7 +58,7 @@ button {
   border: none;
 }
 
-.countrySearchBox button {
+.searchBoxOuter button {
   padding: 0.5rem;
   background-color: var(--pink);
   border: 2px solid var(--light-pink);
@@ -121,7 +121,7 @@ button {
 }
 
 /* city page */
-.cityContainerMain {
+.cityBlockContainer {
   margin: 0;
   border: 1px solid var(--pink);
   display: inline-flex;
@@ -132,28 +132,28 @@ button {
   width: 20%;
 }
 
-.cityContainerMain:nth-child(even) {
+.cityBlockContainer:nth-child(even) {
   background-color: var(--light-pink);
 }
 
-.city-heading {
+.city-headline {
   text-align: center;
   font-size: 35px;
   color: white;
   padding-top: 40px;
 }
 
-.countryDisplay {
+.countryInfo {
   text-align: center;
   padding: 80px;
 }
 
-.card-title {
+.card-heading {
   font-size: 35px;
   text-decoration: underline;
 }
 
-.cityContainer {
+.cityBlock {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -166,7 +166,7 @@ button {
 } */
 
 /* pollutiondata page */
-.tablePollution {
+.pollutionData {
   padding: 0.2rem;
   padding-top: 4rem;
   display: flex;
@@ -180,7 +180,7 @@ button {
   border: 2px solid var(--light-pink);
 }
 
-.table-Heading th {
+.t-Heading th {
   font-size: 30px;
   padding: 5px;
   text-decoration: underline;
@@ -196,18 +196,18 @@ button {
   background-color: var(--light-pink);
 }
 
-.table-Heading th:nth-child(even) {
+.t-Heading th:nth-child(even) {
   background-color: var(--light-pink);
 }
 
 @media only screen and (min-width: 300px) {
   /* navbar */
-  .countrySearchBox input {
+  .searchBoxOuter input {
     padding: 2px 2px;
     font-size: 9px;
   }
 
-  .countrySearchBox button {
+  .searchBoxOuter button {
     margin: 0.4em;
     padding: 2px 2px;
     font-size: 8px;
@@ -253,23 +253,23 @@ button {
     font-size: 18px;
   }
 
-  .card-title {
+  .card-heading {
     font-size: 25px;
   }
 
   /* city page */
-  .cityContainerMain {
+  .cityBlockContainer {
     display: inline-block;
     width: 100%;
     height: 15%;
   }
 
-  .cityContainer {
+  .cityBlock {
     height: 8rem;
     float: left;
   }
 
-  .city-heading {
+  .city-headline {
     width: 140%;
     height: 15%;
     font-size: 28px;
@@ -281,17 +281,17 @@ button {
     margin-top: 2.5em;
   }
 
-  .countryDisplay {
+  .countryInfo {
     height: 15%;
   }
 
   /* pollutiondata page */
-  .tablePollution {
+  .pollutionData {
     width: 100%;
     padding: 1.5rem;
   }
 
-  .table-Heading th {
+  .t-Heading th {
     font-size: 12px;
   }
 
@@ -310,16 +310,16 @@ button {
     width: 50%;
   }
 
-  .cityContainerMain {
+  .cityBlockContainer {
     width: 100%;
   }
 
-  .cityContainerMain:nth-child(even) {
+  .cityBlockContainer:nth-child(even) {
     background-color: var(--light-pink);
   }
 
   /* pollutiondata page */
-  .tablePollution {
+  .pollutionData {
     padding: 0.2rem;
     padding-top: 4rem;
     width: 100%;
@@ -338,7 +338,7 @@ button {
     width: 100%;
   }
 
-  .cityContainerMain {
+  .cityBlockContainer {
     width: 100%;
   }
 }
@@ -359,7 +359,7 @@ button {
     float: right;
   }
 
-  .countrySearchBox input {
+  .searchBoxOuter input {
     padding: 8px 8px;
     margin-left: 1em;
     border: 2px solid var(--light-pink);
@@ -379,7 +379,7 @@ button {
     border: none;
   }
 
-  .countrySearchBox button {
+  .searchBoxOuter button {
     padding: 8px 8px;
     font-size: 15px;
   }
@@ -422,27 +422,27 @@ button {
   }
 
   /* city page */
-  .countryDisplay {
+  .countryInfo {
     height: 15%;
     font-size: 28px;
   }
 
-  .card-title {
+  .card-heading {
     font-size: 35px;
   }
 
-  .card-text {
+  .card-t {
     font-size: 25px;
   }
 
-  .cityContainerMain {
+  .cityBlockContainer {
     width: 20%;
     height: 35vh;
     justify-content: center;
     text-align: center;
   }
 
-  .city-heading {
+  .city-headline {
     font-size: 34px;
     padding-left: 4em;
     text-align: center;
@@ -453,13 +453,13 @@ button {
   }
 
   /* pollutiondata page */
-  .tablePollution {
+  .pollutionData {
     padding: 0.2rem;
     padding-top: 4rem;
     width: 100%;
   }
 
-  .table-Heading th {
+  .t-Heading th {
     font-size: 25px;
   }
 

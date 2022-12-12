@@ -17,11 +17,11 @@ const Cities = () => {
 
   return (
     <section>
-      <div className="countryDisplayBlock">
+      <div className="countryInfoContainer">
         <div>
-          <div className="countryDisplay">
-            <h5 className="card-title">{countryInfo.name}</h5>
-            <p className="card-text">
+          <div className="countryInfo">
+            <h5 className="card-heading">{countryInfo.name}</h5>
+            <p className="card-t">
               Capital:
               {countryInfo.capital[0]}
               <br />
@@ -36,9 +36,9 @@ const Cities = () => {
           </div>
         </div>
         {cities.data?.map((city) => (
-          <div className="cityContainerMain" key={uuidv4()}>
-            <div className="cityContainer">
-              <div className="city-heading">{city}</div>
+          <div className="cityBlockContainer" key={uuidv4()}>
+            <div className="cityBlock">
+              <div className="city-headline">{city}</div>
             </div>
             <div className="load-data-btn">
               <button type="submit">

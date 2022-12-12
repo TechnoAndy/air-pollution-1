@@ -21,10 +21,10 @@ const Pollution = () => {
   const pollutionData = useSelector((state) => state.pollutionReducer);
 
   return (
-    <div className="tablePollution">
+    <div className="pollutionData">
       <table>
         <div className="table-border">
-          <thead className="table-Heading">
+          <thead className="t-Heading">
             <tr>
               <th>(AQI)</th>
               <th>(CO)</th>
@@ -35,7 +35,7 @@ const Pollution = () => {
               <th>Time</th>
             </tr>
           </thead>
-          <tbody className="tabletextColor">
+          <tbody className="pollution -list">
             {pollutionData?.map((element) => (
               <tr key={uuidv4()}>
                 <td className="pollution-data">{element.main.aqi}</td>
@@ -53,7 +53,7 @@ const Pollution = () => {
         </div>
       </table>
       {pollutionData.length === 0 && (
-        <div className="tabletextColor">
+        <div className="pollution -list">
           Data for this city is currently unavailable
         </div>
       )}
