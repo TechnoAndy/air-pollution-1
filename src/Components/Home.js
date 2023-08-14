@@ -40,7 +40,7 @@ const Home = () => {
       <div className="home-heading">
         <header>
           <div className="map-image">
-            <img src="./africa.png" alt="Map Of Africa" />
+            <img src="./aerial-africa.png" alt="Map Of Africa" />
           </div>
           <div className="map-heading">
             <h1>
@@ -58,13 +58,13 @@ const Home = () => {
             <div className="card-t">
               <div className="home-card-heading">{country.name}</div>
               <div className="card-body">
-                {country.countrycode}
+{/*                 {country.countrycode}
                 <br />
-                {country.region}
+                {country.region} */}
               </div>
               <button type="submit">
                 <NavLink
-                  className="nav-link "
+                  className="country-box "
                   to="/city"
                   state={{
                     info: country,

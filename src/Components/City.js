@@ -25,7 +25,7 @@ const Cities = () => {
               Capital:
               {countryInfo.capital[0]}
               <br />
-              No. of cities:
+              Cities:
               {cities.data?.length}
               <br />
             </p>

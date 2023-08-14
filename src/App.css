@@ -1,10 +1,10 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700");
 
 :root {
-  --pink: #f03f83;
-  --dark-pink: #ec4c8a;
-  --light-pink: #fc5193;
-  --T: #51fcda;
+  --main: #AA3939;
+  --dark: #550000;
+  --light: #D46A6A;
+  --T: #FFAAAA;
 }
 
 html {
@@ -20,68 +20,83 @@ html {
 }
 
 body {
-  background-color: var(--pink);
+  background-color: black;
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23aa3939' fill-opacity='0.19' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E"); */
 }
 
 /* navbar */
 .nav-link {
-  padding: 8px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 25px;
   display: flex;
   float: right;
+  color: white;
 }
 
 .link-1 {
-  padding: 15px;
-  font-size: 20px;
+  padding: 20px;
+  font-size: 25px;
   display: flex;
   float: right;
+  color: white;
 }
 
 .searchBoxOuter input {
   padding: 8px 8px;
   margin-left: 1em;
-  border: 2px solid var(--light-pink);
+  border: 2px solid white;
   text-align: center;
   border-radius: 5px;
-  background-color: var(--dark-pink);
+  background-color: black;
   margin-top: 10px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 18px;
+  box-shadow: 10px 12px 14px rgba(0, 0, 0, 0.2);
 }
 
 /* all buttons */
 button {
-  background-color: var(--pink);
-  padding: 5px;
   font-size: 15px;
+  color: white;
   border: none;
+  padding: 2px 25px;
+  border-radius: 5px;
+  background-color: black;
 }
 
 .searchBoxOuter button {
   padding: 0.5rem;
-  background-color: var(--pink);
-  border: 2px solid var(--light-pink);
+  background-color: black;
+  border: 2px solid white;
   border-radius: 5px;
   margin: 0.5em;
-  color: black;
+  color: white;
   cursor: pointer;
+  font-size: 18px;
 }
 
 /* home page */
 .countryInfo {
-  display: inline-flex;
-  width: 20%;
-  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: var(--light-pink);
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 10px 12px 14px rgba(0, 0, 0, 0.2);
 }
 
 .countryInfo:nth-child(2n + 2),
 .countryInfo:nth-child(0) {
-  background-color: var(--pink);
-  border: 1px solid var(--dark-pink);
+  background-color: black;
+  border: 3px solid white;
+}
+
+.card-t {
+  display: flex;
 }
 
 .home-heading {
@@ -95,35 +110,35 @@ button {
 }
 
 .map-image {
-  width: 100%;
-  height: 20%;
+  width: 95%;
+  height: auto;
+  padding-left: 100px;
 }
 
 .map-heading {
-  font-size: 25px;
+  font-size: 45px;
   text-align: center;
   padding-bottom: 8em;
 }
 
 .map-heading h1 {
-  padding-top: 2em;
-  padding-left: 2em;
+  padding: 180px 50px;
 }
 
 .home-card-heading {
-  font-size: 35px;
-  padding: 30px;
+  font-size: 30px;
+  padding: auto;
 }
 
-.card-body {
+/* .card-body {
   padding-bottom: 20px;
   font-size: 25px;
 }
+ */
 
 /* city page */
 .cityBlockContainer {
   margin: 0;
-  border: 1px solid var(--pink);
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -133,14 +148,18 @@ button {
 }
 
 .cityBlockContainer:nth-child(even) {
-  background-color: var(--light-pink);
+  background-color: white;
+}
+
+.cityBlockContainer:nth-child(odd) {
+  background-color: black;
 }
 
 .city-headline {
   text-align: center;
-  font-size: 35px;
-  color: white;
-  padding-top: 40px;
+  font-size: 30px;
+  color: black;
+  padding-top: 80px;
 }
 
 .countryInfo {
@@ -177,7 +196,7 @@ button {
 }
 
 .table-border {
-  border: 2px solid var(--light-pink);
+  border: 2px solid var(--T);
 }
 
 .t-Heading th {
@@ -193,14 +212,14 @@ button {
 }
 
 .pollution-data:nth-child(odd) {
-  background-color: var(--light-pink);
+  background-color: var(--T);
 }
 
 .t-Heading th:nth-child(even) {
-  background-color: var(--light-pink);
+  background-color: var(--T);
 }
 
-@media only screen and (min-width: 300px) {
+@media (max-width: 480px) {
   /* navbar */
   .searchBoxOuter input {
     padding: 2px 2px;
@@ -215,38 +234,67 @@ button {
 
   .nav-link {
     padding: 7px;
-    font-size: 12px;
+    font-size: 14px;
+    text-decoration: none;
   }
 
   .link-1 {
     padding: 14px;
-    font-size: 12px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .home-heading header {
+    display: grid;
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 1 2fr;
   }
 
   /* home page */
   .map-image img {
-    width: 110%;
-    height: 20%;
+    width: 85%;
+    height: auto;
+    margin: 20px -30px;
   }
 
   .map-heading {
-    width: 100%;
-    height: 20%;
-    font-size: 10px;
+    width: 85%;
+    height: auto;
+    font-size: 12px;
+    padding-top: 80px;
+    
+  }
+
+  .map-heading h1 {
+    color: white;
   }
 
   .countryInfo {
-    width: 50%;
-    height: 12rem;
+    width: 60%;
+    height: auto;
+    height: 16rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
   }
 
   .countryInfo:nth-of-type(2n+1) {
-    background-color: var(--pink);
+    background-color: white;
+  }
+
+  .home-countries {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card-t {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .home-card-heading {
-    font-size: 25px;
-    padding: 12px;
+    font-size: 20px;
+    /* padding: 12px; */
   }
 
   .card-body {
@@ -300,7 +348,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media (min-width: 481px) and (max-width: 767px) {
   /* home page */
   .home-heading header {
     margin-left: -1em;
@@ -315,7 +363,7 @@ button {
   }
 
   .cityBlockContainer:nth-child(even) {
-    background-color: var(--light-pink);
+    background-color: white;
   }
 
   /* pollutiondata page */
@@ -326,7 +374,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 700px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /* home page */
   .home-heading header {
     margin-left: -1em;
@@ -343,7 +391,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
   /* navbar */
   .nav-link {
     padding: 8px;
@@ -362,10 +410,11 @@ button {
   .searchBoxOuter input {
     padding: 8px 8px;
     margin-left: 1em;
-    border: 2px solid var(--light-pink);
+    border: 2px solid var(--T);
+    color: white;
     text-align: center;
     border-radius: 5px;
-    background-color: var(--dark-pink);
+    background-color: var(--light);
     margin-top: 10px;
     cursor: pointer;
     font-size: 15px;
@@ -397,7 +446,7 @@ button {
 
   .map-image {
     width: 70%;
-    height: 20%;
+    height: auto;
   }
 
   .map-heading {
@@ -466,4 +515,8 @@ button {
   .pollution-data {
     font-size: 18px;
   }
+}
+
+@media (min-width: 1281px) {
+
 }
