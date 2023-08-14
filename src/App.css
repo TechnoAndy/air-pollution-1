@@ -121,6 +121,13 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.card-text {
+  font-size: 24px;
+  padding: 10px;
 }
 
 .home-countries {
@@ -208,7 +215,7 @@ button {
 }
 
 .card-heading {
-  font-size: 35px;
+  font-size: 45px;
   text-decoration: underline;
 }
 
