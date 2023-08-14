@@ -1,12 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700");
 
-:root {
-  --main: #AA3939;
-  --dark: #550000;
-  --light: #D46A6A;
-  --T: #FFAAAA;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -16,12 +9,11 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #fff;
+
 }
 
 body {
   background-color: black;
-  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23aa3939' fill-opacity='0.19' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E"); */
 }
 
 /* navbar */
@@ -50,12 +42,14 @@ body {
   background-color: black;
   margin-top: 10px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 15px;
   box-shadow: 10px 12px 14px rgba(0, 0, 0, 0.2);
 }
 
 /* all buttons */
 button {
+  display: flex;
+  flex-direction: column;
   font-size: 15px;
   color: white;
   border: none;
@@ -64,39 +58,73 @@ button {
   background-color: black;
 }
 
+.country-box {
+  color: white;
+  font-size: 22px;
+  padding: 5px 5px;
+}
+
 .searchBoxOuter button {
   padding: 0.5rem;
   background-color: black;
   border: 2px solid white;
   border-radius: 5px;
-  margin: 0.5em;
+  margin: 0.9em;
   color: white;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 /* home page */
+
+.home-countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
 .countryInfo {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: auto;
+  width: 100%;
+  height: 50vh;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto;
+  margin: 5px auto;
   border-radius: 10px;
-  box-shadow: 10px 12px 14px rgba(0, 0, 0, 0.2);
+  border: 4px solid black;
+  color: white;
 }
 
-.countryInfo:nth-child(2n + 2),
-.countryInfo:nth-child(0) {
-  background-color: black;
-  border: 3px solid white;
+.countryInfo:nth-child(odd) {
+  background-image: url(C:\Users\atdie\Desktop\Air-pollution-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.countryInfo:nth-child(even) {
+  background-image: url(C:\Users\atdie\Desktop\Air-pollution-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .card-t {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-countries {
+  background-color: #ffffff;
 }
 
 .home-heading {
@@ -116,6 +144,7 @@ button {
 }
 
 .map-heading {
+  color: white;
   font-size: 45px;
   text-align: center;
   padding-bottom: 8em;
@@ -128,6 +157,7 @@ button {
 .home-card-heading {
   font-size: 30px;
   padding: auto;
+  margin-bottom: 60px;
 }
 
 /* .card-body {
@@ -145,20 +175,30 @@ button {
   align-items: center;
   height: 20rem;
   width: 20%;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 .cityBlockContainer:nth-child(even) {
-  background-color: white;
+  background-image: url(C:\Users\atdie\Desktop\Air-pollution-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.9;
 }
 
 .cityBlockContainer:nth-child(odd) {
-  background-color: black;
+  background-image: url(C:\Users\atdie\Desktop\Air-pollution-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .city-headline {
   text-align: center;
   font-size: 30px;
-  color: black;
   padding-top: 80px;
 }
 
@@ -180,9 +220,9 @@ button {
   height: 100%;
 }
 
-/* .load-data-btn {
-  padding-bottom: 80px;
-} */
+.load-data-btn {
+  padding-bottom: 60px;
+}
 
 /* pollutiondata page */
 .pollutionData {
@@ -196,13 +236,17 @@ button {
 }
 
 .table-border {
-  border: 2px solid var(--T);
+  border: 2px solid white;
 }
 
 .t-Heading th {
   font-size: 30px;
   padding: 5px;
   text-decoration: underline;
+}
+
+.pollutionData {
+  background-color: rgb(190, 189, 189);
 }
 
 .pollution-data {
@@ -212,11 +256,11 @@ button {
 }
 
 .pollution-data:nth-child(odd) {
-  background-color: var(--T);
+  background-color: white;
 }
 
 .t-Heading th:nth-child(even) {
-  background-color: var(--T);
+  background-color: white;
 }
 
 @media (max-width: 480px) {
@@ -364,6 +408,10 @@ button {
 
   .cityBlockContainer:nth-child(even) {
     background-color: white;
+  }
+
+  .cityBlockContainer:nth-child(odd) {
+    background-color: black;
   }
 
   /* pollutiondata page */

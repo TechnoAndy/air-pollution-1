@@ -62,17 +62,19 @@ const Home = () => {
                 <br />
                 {country.region} */}
               </div>
-              <button type="submit">
-                <NavLink
-                  className="country-box "
-                  to="/city"
-                  state={{
-                    info: country,
-                  }}
-                >
-                  Visit Cities
-                </NavLink>
-              </button>
+              <div className="load-data-btn">
+                <button type="submit">
+                  <NavLink
+                    className="country-box "
+                    to="/city"
+                    state={{
+                      info: country,
+                    }}
+                  >
+                    Visit Cities
+                  </NavLink>
+                </button>
+              </div>
             </div>
           </div>
         ))}
