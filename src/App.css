@@ -17,6 +17,30 @@ body {
 }
 
 /* navbar */
+.searchBoxOuter input {
+  padding: 8px 8px;
+  margin-left: 1em;
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 5px;
+  background-color: black;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 10px 12px 14px rgba(0, 0, 0, 0.2);
+}
+
+.searchBoxOuter button {
+  padding: 0.5rem;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 0.9em;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
 .nav-link {
   padding: 10px;
   font-size: 25px;
@@ -31,19 +55,6 @@ body {
   display: flex;
   float: right;
   color: white;
-}
-
-.searchBoxOuter input {
-  padding: 8px 8px;
-  margin-left: 1em;
-  border: 2px solid white;
-  text-align: center;
-  border-radius: 5px;
-  background-color: black;
-  margin-top: 10px;
-  cursor: pointer;
-  font-size: 15px;
-  box-shadow: 10px 12px 14px rgba(0, 0, 0, 0.2);
 }
 
 /* all buttons */
@@ -64,19 +75,9 @@ button {
   padding: 5px 5px;
 }
 
-.searchBoxOuter button {
-  padding: 0.5rem;
-  background-color: black;
-  border: 2px solid white;
-  border-radius: 5px;
-  margin: 0.9em;
-  color: white;
-  cursor: pointer;
-  font-size: 15px;
-}
+
 
 /* home page */
-
 .home-countries {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -167,12 +168,6 @@ button {
   margin-bottom: 60px;
 }
 
-/* .card-body {
-  padding-bottom: 20px;
-  font-size: 25px;
-}
- */
-
 /* city page */
 .cityBlockContainer {
   margin: 0;
@@ -222,7 +217,7 @@ button {
 .cityBlock {
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   width: 50%;
   height: 100%;
 }
@@ -274,23 +269,23 @@ button {
   /* navbar */
   .searchBoxOuter input {
     padding: 2px 2px;
-    font-size: 9px;
+    font-size: 10px;
   }
 
   .searchBoxOuter button {
-    margin: 0.4em;
+    margin: 0.8em;
     padding: 2px 2px;
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .nav-link {
-    padding: 7px;
+    padding: 9px;
     font-size: 14px;
     text-decoration: none;
   }
 
   .link-1 {
-    padding: 14px;
+    padding: 18px;
     font-size: 14px;
     text-decoration: none;
   }
@@ -303,91 +298,77 @@ button {
 
   /* home page */
   .map-image img {
-    width: 85%;
-    height: auto;
-    margin: 20px -30px;
+    width: 100%;
+    margin: 20px -40px;
   }
 
   .map-heading {
-    width: 85%;
-    height: auto;
+    width: 100%;
     font-size: 12px;
-    padding-top: 80px;
-    
-  }
-
-  .map-heading h1 {
-    color: white;
+    margin-top: -40px;
   }
 
   .countryInfo {
-    width: 60%;
-    height: auto;
-    height: 16rem;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: white;
-  }
-
-  .countryInfo:nth-of-type(2n+1) {
-    background-color: white;
+    width: 85%;
+    color: black;
   }
 
   .home-countries {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .card-t {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .home-card-heading {
-    font-size: 20px;
-    /* padding: 12px; */
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px;
   }
 
-  .card-body {
+  .country-box {
+    color: white;
     font-size: 18px;
+    padding: 10px 12px;
   }
 
-  .card-heading {
-    font-size: 25px;
+  .card-text {
+    font-weight: bold;
   }
 
   /* city page */
   .cityBlockContainer {
     display: inline-block;
-    width: 100%;
-    height: 15%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 20%;
   }
 
   .cityBlock {
-    height: 8rem;
-    float: left;
+    height: 5rem;
   }
 
   .city-headline {
     width: 140%;
     height: 15%;
-    font-size: 28px;
-    padding-right: 1em;
+    font-size: 25px;
+    padding-left: 0.6em;
   }
 
   .load-data-btn button {
-    margin-left: 5.8rem;
-    margin-top: 2.5em;
+    margin: auto;
   }
 
   .countryInfo {
-    height: 15%;
+    height: 25%;
   }
 
   /* pollutiondata page */
   .pollutionData {
-    width: 100%;
-    padding: 1.5rem;
+    width: 95%;
+    margin: auto;
   }
 
   .t-Heading th {
