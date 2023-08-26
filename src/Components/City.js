@@ -36,7 +36,7 @@ const Cities = () => {
           </div>
         </div>
         {cities.data?.map((city) => (
-          <div className="cityBlockContainer" key={uuidv4()}>
+          <div id='cityInfo' className="cityBlockContainer" key={uuidv4()}>
             <div className="cityBlock">
               <div className="city-headline">{city}</div>
             </div>

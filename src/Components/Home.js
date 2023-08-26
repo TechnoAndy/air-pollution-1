@@ -38,12 +38,12 @@ const Home = () => {
           Search
         </Button>
       </div>
-      <div className="home-heading">
+      <div className="home-heading" id='homeHeading'>
         <header>
-          <div className="map-image">
+          <div className="map-image" id='mapImage'>
             <img src="./aerial-africa.png" alt="Map Of Africa" />
           </div>
-          <div className="map-heading">
+          <div className="map-heading" id='mapHeading'>
             <h1>
               Quality of air in
               <br />
@@ -53,9 +53,9 @@ const Home = () => {
         </header>
       </div>
 
-      <Container className="home-countries">
+      <Container className="home-countries" id='homeCountries'>
         {countries.map((country) => (
-          <div key={uuidv4()} className="countryInfo">
+          <div key={uuidv4()} className="countryInfo" id='countryInfo'>
             <div className="card-t">
               <div className="home-card-heading">{country.name}</div>
               <div className="card-body">
